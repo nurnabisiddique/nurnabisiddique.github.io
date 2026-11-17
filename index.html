@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nurnabi Siddique | Technical Lead, Production AI &amp; Real-Time Platforms</title>
+<meta name="description" content="Nurnabi Siddique: technical lead building production AI assistants, voice agents and real-time platforms. 17 years in software, Technical Lead at REVE Chat since 2016. Dhaka, open to remote.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230b5c7a'/><text x='32' y='42' font-family='Arial' font-weight='700' font-size='26' fill='white' text-anchor='middle'>NS</text></svg>">
+<style>
+  :root {
+    --bg: #fafbfc;
+    --card: #ffffff;
+    --ink: #11161c;
+    --body: #3a4552;
+    --muted: #5a6676;
+    --line: #e1e6ec;
+    --accent: #0b5c7a;
+    --accent-ink: #ffffff;
+    --accent-soft: #e6f2f6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1419; --card: #161c23; --ink: #eef2f6; --body: #b7c1cc;
+      --muted: #8593a2; --line: #26303a; --accent: #5cc0de; --accent-ink: #08212b;
+      --accent-soft: #14303b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1419; --card: #161c23; --ink: #eef2f6; --body: #b7c1cc;
+    --muted: #8593a2; --line: #26303a; --accent: #5cc0de; --accent-ink: #08212b;
+    --accent-soft: #14303b;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--body);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* header */
+  header.top { padding: 72px 0 40px; }
+  .eyebrow { font-size: 13px; font-weight: 600; color: var(--accent); margin: 0 0 14px; }
+  h1 { font-size: clamp(34px, 6vw, 52px); line-height: 1.1; color: var(--ink); margin: 0 0 16px; font-weight: 750; }
+  .lede { font-size: clamp(18px, 2.6vw, 22px); color: var(--ink); max-width: 640px; margin: 0 0 12px; line-height: 1.45; }
+  .facts { color: var(--muted); margin: 0 0 28px; font-size: 15px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+  .btn {
+    display: inline-block; padding: 10px 18px; border-radius: 8px; font-weight: 600; font-size: 15px;
+    text-decoration: none; border: 1px solid var(--line); color: var(--ink); background: var(--card);
+  }
+  .btn:hover { border-color: var(--accent); }
+  .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+
+  /* sections */
+  section { padding: 36px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 13px; font-weight: 700; text-transform: uppercase; color: var(--muted); margin: 0 0 20px; }
+  h3 { font-size: 18px; color: var(--ink); margin: 0 0 8px; }
+  p { margin: 0 0 12px; }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
+  .card p { margin: 0; font-size: 15px; }
+  .card .tag { display: inline-block; font-size: 12px; font-weight: 600; color: var(--accent);
+    background: var(--accent-soft); padding: 2px 8px; border-radius: 99px; margin-bottom: 12px; }
+
+  .work { display: grid; gap: 16px; }
+  .case { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
+  .case header { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; align-items: baseline; margin-bottom: 8px; }
+  .case h3 { margin: 0; }
+  .case .when { color: var(--muted); font-size: 14px; }
+  .case dl { margin: 12px 0 0; display: grid; grid-template-columns: 84px 1fr; gap: 6px 14px; font-size: 15px; }
+  .case dt { color: var(--muted); font-weight: 600; }
+  .case dd { margin: 0; }
+
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  ul.plain { margin: 0; padding-left: 18px; }
+  ul.plain li { margin-bottom: 8px; }
+
+  .timeline { display: grid; gap: 0; border-left: 2px solid var(--line); margin-left: 4px; }
+  .job { position: relative; padding: 0 0 26px 22px; }
+  .job:last-child { padding-bottom: 0; }
+  .job::before { content: ""; position: absolute; left: -7px; top: 7px; width: 12px; height: 12px;
+    border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); }
+  .job-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 16px; align-items: baseline; }
+  .job-head h3 { margin: 0; }
+  .job .when { color: var(--muted); font-size: 14px; }
+  .job .org { color: var(--accent); font-weight: 600; margin: 2px 0 8px; font-size: 15px; }
+  .job p:last-child { margin: 0; font-size: 15px; }
+
+  .stack { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+  .stack li { font-size: 14px; padding: 4px 11px; border: 1px solid var(--line); border-radius: 99px; background: var(--card); }
+
+  footer { padding: 36px 0 64px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+
+  @media (max-width: 640px) {
+    header.top { padding: 48px 0 28px; }
+    .two { grid-template-columns: 1fr; }
+    .case dl { grid-template-columns: 1fr; gap: 2px; }
+    .case dd { margin-bottom: 8px; }
+  }
+  @media print { .actions { display: none; } body { background: #fff; } }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="top">
+    <p class="eyebrow">Technical Lead &middot; Dhaka, Bangladesh &middot; open to remote</p>
+    <h1>Nurnabi Siddique</h1>
+    <p class="lede">I build production AI assistants, voice agents and the real-time platforms they run on, and I lead the engineers who ship them.</p>
+    <p class="facts">17 years in software &middot; Technical Lead at REVE Chat since 2016 &middot; team of 20</p>
+    <div class="actions">
+      <a class="btn primary" href="nurnabi-siddique-cv.pdf" download>Download CV (PDF)</a>
+      <a class="btn" href="mailto:nursiddique@gmail.com">Email</a>
+      <a class="btn" href="https://linkedin.com/in/nurnabisiddque/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/nurnabisiddique" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </header>
+
+  <section id="build">
+    <h2>What I build</h2>
+    <div class="cards">
+      <div class="card">
+        <span class="tag">Applied AI</span>
+        <h3>Assistants and agents</h3>
+        <p>RAG pipelines with retrieval, re-ranking and grounding; agents that call tools against live business systems; evaluation and guardrails on answer quality.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Voice</span>
+        <h3>Voice agents</h3>
+        <p>Speech recognition, LLM reasoning and speech synthesis over SIP and WebRTC, with streaming audio, barge-in handling and turn detection.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Platform</span>
+        <h3>Real-time SaaS</h3>
+        <p>Multi-tenant, event-driven microservices on Kubernetes. WebSocket messaging, routing and queuing for around 2,000 business customers.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Models</span>
+        <h3>Self-hosted LLMs</h3>
+        <p>Open-weight models served with vLLM and fine-tuned for our tasks, compared with hosted APIs on quality, latency and cost.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <h2>Selected work</h2>
+    <div class="work">
+
+      <article class="case">
+        <header>
+          <h3>STC Kuwait &mdash; Smart AI Assistant</h3>
+          <span class="when">National telecom operator</span>
+        </header>
+        <dl>
+          <dt>Goal</dt><dd>Give a national telecom operator's customers answers across channels without a human agent.</dd>
+          <dt>Built</dt><dd>A RAG and LLM assistant deployed across omnichannel touchpoints including WhatsApp, integrated with the operator's ticketing system.</dd>
+          <dt>My role</dt><dd>Architecture and end-to-end delivery.</dd>
+        </dl>
+      </article>
+
+      <article class="case">
+        <header>
+          <h3>bKash &mdash; Omnichannel AI Assistant</h3>
+          <span class="when">2019&ndash;2021</span>
+        </header>
+        <dl>
+          <dt>Goal</dt><dd>Automate the digital support channel for Bangladesh's largest mobile financial service (23M+ users).</dd>
+          <dt>Built</dt><dd>An AI chatbot and live chat across web, mobile app, WhatsApp, Facebook and Viber.</dd>
+          <dt>My role</dt><dd>Technical lead on delivery to an enterprise customer.</dd>
+        </dl>
+      </article>
+
+      <article class="case">
+        <header>
+          <h3>Agentic commerce and voice agent</h3>
+          <span class="when">REVE Chat, recent</span>
+        </header>
+        <dl>
+          <dt>Question</dt><dd>Could self-hosted, fine-tuned models match hosted APIs on quality, latency and cost for real-time voice and commerce?</dd>
+          <dt>Built</dt><dd>AI agents that complete tasks through tool calling, and a voice agent that handles calls end to end with handover to a human. Fine-tuned local models became a working alternative to hosted APIs for both.</dd>
+          <dt>My role</dt><dd>Design, model serving and team lead.</dd>
+        </dl>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="depth">
+    <h2>Engineering depth</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Architecture and scale</h3>
+        <ul class="plain">
+          <li>Decomposed the platform into independently deployable microservices with versioned REST APIs and event-driven messaging.</li>
+          <li>Real-time layer built on long-lived WebSocket connections, presence and skill-based routing.</li>
+          <li>Docker and Kubernetes with horizontal autoscaling, rolling zero-downtime deployments and automated failover.</li>
+          <li>Data tier tuned for throughput: MySQL replication and indexing, Redis Cluster caching, MongoDB for conversation storage.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Security and compliance</h3>
+        <ul class="plain">
+          <li>OAuth2 and JWT, role-based access control, encryption in transit and at rest.</li>
+          <li>Secrets management, audit logging and data residency.</li>
+          <li>Led the platform through security reviews for enterprise and financial customers.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Observability and operations</h3>
+        <ul class="plain">
+          <li>Prometheus, Grafana, ELK and CloudWatch, so problems show up in dashboards before customers report them.</li>
+          <li>p95 and p99 latency, error budgets and capacity planning as working tools.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="job">
+        <div class="job-head"><h3>Technical Lead</h3><span class="when">Jul 2016 &ndash; present</span></div>
+        <p class="org">REVE Chat</p>
+        <p>Own the architecture of a multi-tenant customer engagement platform (live chat, omnichannel messaging, voice and AI assistants) used by around 2,000 businesses. Led its move from rule-based NLP to LLM assistants, RAG, agents and voice. Lead a team of 20 across backend, ML, mobile and QA.</p>
+      </div>
+      <div class="job">
+        <div class="job-head"><h3>Project Manager</h3><span class="when">Jul 2013 &ndash; Jul 2016</span></div>
+        <p class="org">REVE Systems Ltd.</p>
+        <p>Managed the full lifecycle of a SIP calling app for Android and BlackBerry, delivered to telecom service providers in many countries, each with its own customisation. Led a 20-person team across development, QA, product and support.</p>
+      </div>
+      <div class="job">
+        <div class="job-head"><h3>Senior Software Engineer</h3><span class="when">Jul 2009 &ndash; Jul 2011</span></div>
+        <p class="org">REVE Systems Ltd.</p>
+        <p>Promoted from Software Engineer after one year. Built the SIP parser and registration module for a carrier-grade softswitch, plus billing and call-rating modules, in Java, C and C++. Led code review for a team of 5.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="lead">
+    <h2>How I work</h2>
+    <div class="two">
+      <div>
+        <h3>Hands-on, not hands-off</h3>
+        <p>I still review code, set the architecture and test strategy, and read the dashboards. I use operational data to find bottlenecks and fix root causes, not symptoms.</p>
+      </div>
+      <div>
+        <h3>Delivery to enterprise customers</h3>
+        <p>I turn customer requirements into specifications, plan the work, and sign off launches. I lead a team across backend, ML, mobile and QA, and I'm the technical contact for large accounts.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="stack">
+    <h2>Tools I use</h2>
+    <ul class="stack">
+      <li>Python</li><li>Java</li><li>Spring Boot</li><li>Node.js</li><li>React</li>
+      <li>LangChain</li><li>vLLM</li><li>Pinecone</li><li>Qdrant</li><li>Elasticsearch</li>
+      <li>Kubernetes</li><li>Docker</li><li>AWS</li><li>Kafka</li><li>RabbitMQ</li>
+      <li>MySQL</li><li>MongoDB</li><li>Redis</li><li>Prometheus</li><li>Grafana</li>
+      <li>SIP</li><li>WebRTC</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education and certification</h2>
+    <div class="two">
+      <div>
+        <h3>B.Sc. Computer Science and Engineering</h3>
+        <p>Bangladesh University of Engineering and Technology (BUET), 2004&ndash;2009.</p>
+      </div>
+      <div>
+        <h3>Certified ScrumMaster (CSM)</h3>
+        <p>Scrum Alliance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Looking for</h2>
+    <p>Remote roles in applied AI and platform engineering: building and shipping RAG, agent and voice systems, and the backend they run on. I stay hands-on and can lead a team when the work calls for it. Based in Dhaka, no relocation or sponsorship needed.</p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:nursiddique@gmail.com">nursiddique@gmail.com</a>
+      <a class="btn" href="https://linkedin.com/in/nurnabisiddque/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="nurnabi-siddique-cv.pdf" download>Download CV</a>
+    </div>
+  </section>
+
+  <footer>&copy; 2026 Nurnabi Siddique</footer>
+
+</div>
+<!-- PROOF SECTION: add an "Open source" section between #work and #lead once the RAG + eval repo and vLLM benchmark are public. -->
+</body>
+</html>
